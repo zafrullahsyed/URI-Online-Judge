@@ -10,16 +10,25 @@ public class URI_1158 {
 
         Scanner sc = new Scanner(System.in);
 
+        int testCases = sc.nextInt();
+        while (testCases != 0){
+            int oddCount = 0;
+            int  number = sc.nextInt();
+            int iteratorCount = sc.nextInt();
+            for (int j = 1 ; j <= iteratorCount; j++){
+                if (number % 2 == 0){
+                    number = number + 1;
+                    oddCount = oddCount + number;
+                    number++;
+                }else {
+                    oddCount = oddCount + number;
+                    number = number + 2;
+                }
 
-        int numX = sc.nextInt();
-        int numY = sc.nextInt();
-        int count, numBuffer = 0;
-
-        if (numX % 2 != 0) {
-            for (count = 1; count < numY; count++) {
-                numX = numX + 2;
             }
-            System.out.println(numX);
+            System.out.println(oddCount);
+            testCases--;
         }
+
     }
 }

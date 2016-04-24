@@ -10,8 +10,7 @@ public class URI_1142_not_finishefd {
         int num = sc.nextInt();
 
         for (int i = 1; i <= num; i++) {
-            System.out.print(i + ((i % num == 0) ? "\n" : " "));
+            System.out.print(i + " " + (i + 1) + " " + (i = i + 2) + " " + ((num % 4 == 0) ? "\n" : " "));
         }
-
     }
 }
